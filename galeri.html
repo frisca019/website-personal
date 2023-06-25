@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeri Foto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .gallery-item {
+            flex-basis: 25%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeri Foto</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="gambar1.jpg" alt="Foto 1">
+        </div>
+        <div class="gallery-item">
+            <img src="path_ke_gambar2.jpg" alt="Foto 2">
+        </div>
+        <div class="gallery-item">
+            <img src="path_ke_gambar3.jpg" alt="Foto 3">
+        </div>
+        <div class="gallery-item">
+            <img src="path_ke_gambar4.jpg" alt="Foto 4">
+        </div>
+    </div>
+</body>
+</html>

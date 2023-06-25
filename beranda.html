@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Datang</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .welcome-message {
+      text-align: center;
+      font-size: 24px;
+      color: #0c0101;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-message">
+    <h1>Selamat Datang</h1>
+    <p>Website Pribadi Saya</p>
+  </div>
+
+  <script>
+    // Daftar URL gambar latar belakang
+    var backgroundImages = [
+      "https://example.com/background1.jpg",
+      "https://example.com/background2.jpg",
+      "https://example.com/background3.jpg"
+    ];
+
+    // Memilih gambar acak dari daftar
+    var randomIndex = Math.floor(Math.random() * backgroundImages.length);
+    var randomImage = backgroundImages[randomIndex];
+
+    // Mengatur gambar sebagai latar belakang
+    document.body.style.backgroundImage = "url('" + randomImage + "')";
+  </script>
+</body>
+</html>
